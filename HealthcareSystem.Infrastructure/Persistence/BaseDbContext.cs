@@ -7,6 +7,12 @@ namespace HealthcareSystem.Infrastructure.Persistence
     public class BaseDbContext : DbContext
     {
         public DbSet<Patient> Patients { get; set; }
+        public DbSet<Hospital> Hospitals { get; set; }
+        public DbSet<Policlinic> Policlinics { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<HospitalPoliclinics> HospitalPoliclinics { get; set; }
+        public DbSet<PoliclinicDoctors> PoliclinicDoctors { get; set; }
+        public DbSet<Appointment> Appointments{ get; set; }
         public BaseDbContext() 
         {
         }

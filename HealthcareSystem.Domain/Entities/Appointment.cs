@@ -9,7 +9,7 @@ namespace HealthcareSystem.Domain.Entities
 {
     public class Appointment : BaseEntity
     {
-        public Patient Patient { get; set; }
+        public Patient? Patient { get; set; }
         public Doctor Doctor { get; set; }
         public Hospital Hospital { get; set; }
         public DateTime AppointmentDateTime { get; set; }
