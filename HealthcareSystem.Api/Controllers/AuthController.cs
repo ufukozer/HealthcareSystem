@@ -19,23 +19,23 @@ using HealthcareSystem.Domain.Entities;
 
 namespace HeathcareSystem.Controllers
 {
-    [Route("api/[controller]")] // api/authManagement
+    [Route("api/[controller]")] // api/authController
     [ApiController]
-    public class AuthManagements : ControllerBase
+    public class AuthController : ControllerBase
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly JwtConfig _jwtConfig;
         private readonly TokenValidationParameters _tokenValidationParams;
         private readonly AuthDbContext _authDbContext;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly ILogger<AuthManagements> _logger;
+        private readonly ILogger<AuthController> _logger;
 
-        public AuthManagements(
+        public AuthController(
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager,
             IOptionsMonitor<JwtConfig> optionsMonitor,
             TokenValidationParameters tokenValidationParams,
-            ILogger<AuthManagements> logger,
+            ILogger<AuthController> logger,
             AuthDbContext authDbContext)
         {
             _logger = logger;
