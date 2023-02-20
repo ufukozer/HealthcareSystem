@@ -11,7 +11,7 @@ IHost host = Host.CreateDefaultBuilder(args)
     {
         services.AddSendGrid(options =>
         //options.ApiKey = context.Configuration.GetValue<string>("SendGridApiKey"));
-        options.ApiKey = "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");
+        options.ApiKey = "SG.62JkBWP4SzylG_Tfi-M05A.HsXdznyVFu6unDDGJ6uNAuEdxomWs71RsA0I68MLc7Mac");
 
         services.AddQuartz(q =>
         {
